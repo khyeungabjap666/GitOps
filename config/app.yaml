@@ -1,3 +1,4 @@
-message: "Hello GitOps"
+title: "My GitOps App"
+message: "Hello from GitOps!"
+color: "#2563eb"
 
-  this is update message

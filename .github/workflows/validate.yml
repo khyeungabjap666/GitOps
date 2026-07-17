@@ -1,0 +1,12 @@
+name: Validate
+on:
+  pull_request:
+    branches: [main]
+    paths: ['config/**', 'site/**', 'scripts/**']
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/validate.sh
